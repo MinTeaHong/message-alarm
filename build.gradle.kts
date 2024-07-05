@@ -1,5 +1,5 @@
 plugins {
-  kotlin("jvm") version "1.9.4"
+  kotlin("jvm") version "1.9.24"
 }
 
 group = "com.salgam"
