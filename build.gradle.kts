@@ -1,21 +1,23 @@
 plugins {
-    kotlin("jvm") version "1.9.22"
+  kotlin("jvm") version "1.9.22"
 }
 
 group = "com.salgam"
 version = "1.0-SNAPSHOT"
 
 repositories {
-    mavenCentral()
+  mavenCentral()
 }
 
 dependencies {
-    testImplementation("org.jetbrains.kotlin:kotlin-test")
+  implementation("com.squareup.okhttp3:okhttp:4.9.2")
+  implementation("org.json:json:20210307")
+  testImplementation("org.jetbrains.kotlin:kotlin-test")
 }
 
 tasks.test {
-    useJUnitPlatform()
+  useJUnitPlatform()
 }
 kotlin {
-    jvmToolchain(17)
+  jvmToolchain(17)
 }
